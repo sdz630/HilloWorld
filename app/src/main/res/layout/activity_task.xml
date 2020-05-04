@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_task_completed"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/pure_white">
+        <Button
+            android:id="@+id/btn_back_to_task"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_back_black_24dp"
+            />
+
+        <CheckBox
+            android:id="@+id/radio_task_completed"
+            android:gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:checked="false"
+            android:button="@drawable/checking"/>
+
+
+        <TextView
+            android:id="@+id/et_task_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radio_task_completed"
+            android:layout_alignBottom="@+id/radio_task_completed"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/radio_task_completed"
+            android:text="Test"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

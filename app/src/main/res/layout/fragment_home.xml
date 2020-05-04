@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/white"
+        android:layout_alignParentTop="true"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabSelectedTextColor="@color/black"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_tools"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_news"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout"
+        android:id="@+id/view_pager_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <fragment-->
+<!--            android:id="@+id/navigation_main"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:defaultNavHost="true"-->
+<!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--            app:navGraph="@navigation/top_navigation"/>-->
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

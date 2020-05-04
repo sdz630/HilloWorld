@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/about_me_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/about_me_vertical_divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/about_me_title"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_me_vertical_divider">
+
+<!--        <View-->
+<!--            android:id="@+id/about_me_view"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/light_blue"-->
+<!--            android:orientation="horizontal" />-->
+        <LinearLayout
+            android:id="@+id/about_me_view"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tou_xiang"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:civ_border_width="5dp"
+                app:civ_border_overlay="true"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_color="@color/light_blue"
+                android:src="@drawable/touxiang"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="孙东哲"
+                android:layout_gravity="center"
+                android:textSize="28dp"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/about_me_horizontal_divider"-->
+<!--            android:layout_width="5dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_toRightOf="@+id/about_me_view"-->
+<!--            android:background="@color/light_gray" />-->
+
+        <LinearLayout
+            android:id="@+id/about_me_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/about_me_view"
+            android:background="@color/pure_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:text="QQ: 2268050692"
+                android:textColor="@color/pure_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Email: sdz630@outlook.com"
+                android:textColor="@color/pure_black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:text="Blog: www.sundongzhe.cn"
+                android:textColor="@color/pure_black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/pure_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ListView
+        android:id="@+id/list_to_do"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/line_add_thing"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <EditText
+            android:hint="添加待办事项"
+            android:id="@+id/edet_add_thing"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent" />
+
+        <Button
+            android:background="@drawable/ic_upload_24dp"
+            android:backgroundTint="@color/light_gray"
+            android:id="@+id/btn_add_thing"
+            android:layout_height="wrap_content"
+            android:layout_width="42dp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:background="@drawable/bg_float_btn"
+        android:id="@+id/float_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="66dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/qmui_btn_blue_border"
+        app:rippleColor="@color/qmui_btn_blue_border" />
+
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_delete_task"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:checked="false"
+        android:button="@drawable/checking" />
+
+
+    <LinearLayout
+        android:id="@+id/liner_task"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="to do sth"/>
+
+            <TextView
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/light_gray"
+                android:text="date"/>
+    </LinearLayout>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_delete"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:src="@drawable/girl"-->
+<!--        android:clickable="false"-->
+<!--        android:focusable="false"-->
+<!--        android:focusableInTouchMode="false"-->
+<!--        android:text="删除"-->
+<!--        android:visibility="gone"/>-->
+
+
+<!--    <TextView-->
+<!--             android:clickable="false"-->
+<!--             android:focusable="false"-->
+<!--             android:focusableInTouchMode="false"-->
+<!--             android:id="@+id/text"-->
+<!--             android:layout_width="match_parent"-->
+<!--             android:layout_weight="1"-->
+<!--             android:layout_height="50dp"-->
+<!--             android:gravity="center"-->
+<!--             android:text="默认" />-->
+
+         <Button
+             android:id="@+id/btn_delete"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:background="@color/red"
+             android:clickable="false"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:text="删除"
+             android:visibility="gone" />
+</LinearLayout>
